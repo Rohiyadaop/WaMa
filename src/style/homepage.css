@@ -1,0 +1,256 @@
+/* Apply dark background and center content */
+.body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.headline {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #0ff, #ff0, #f00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.headline2 {
+    font-size: 38px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #0ff, #ff0, #f00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.glow-line {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #0ff, #ff0, #f00);
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+.glow-line2 {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #0ff, #ff0, #f00);
+    margin-top: 0px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+.button{
+    width: 100%;
+    height: 95px;
+    background: linear-gradient(90deg, #0ff, #ff0, #f00);
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);  
+    border-radius: 45px;
+    display: flex;
+    grid-area: span;
+    justify-content: space-around;
+}
+.button a  {
+    width: 40%;
+    height: 57px;
+    background: linear-gradient(90deg, #0ff, rgb(0, 217, 255), #0ff);
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 200, 0.8);  
+    border-radius: 45px;  
+}
+.button button {
+    width: 100%;
+    height: 58px;
+    background: linear-gradient(90deg, #0ff, rgb(0, 217, 255), #0ff);
+    margin-top: 0px;
+    box-shadow: 0 0 15px rgba(0, 255, 200, 0.8);  
+    border-radius: 45px;  
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    height: 100vh;
+    padding: 50px;
+}
+
+/* Left Side Box */
+.info-box2 {
+    width: 50%;
+    height: 340px;
+    padding: 20px;
+    background: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 153, 0, 0.5);
+    text-align: center;
+    color: white;
+}
+
+/* Gradient Text */
+.gradient-text {
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff4500, #ffcc00, #007bff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Right Side Content */
+.content {
+    color: white;
+    max-width: 400px;
+}
+
+.content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+.info-box2 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video fills the box */
+    border-radius: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Styling */
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Video Box Styling */
+.info-box {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Keeps a consistent size */
+    background: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 153, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 70vmin;
+}
+
+/* Video Styling */
+.info-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+    }
+}
+
+.product-card {
+    width: 280px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    max-width: 240px;
+    margin-bottom: 20px;
+  }
+  
+  .product-title {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .product-description {
+    color: #666;
+    margin: 8px 0;
+  }
+  
+  .product-price {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 8px;
+  }
+  
+  .discount {
+    color: #e63946;
+  }
+  
