@@ -3,13 +3,15 @@ import { useState } from 'react';
 import '../style/signUp.css';
 import axios from 'axios';
 
-function sighUp(){
+function SighUp(){
+
     const [name ,setName] = useState("");
     const [email ,setEmail] = useState(""); 
     const [password, setPassword] = useState("");
+
     const handleSubmit= (e)=>{
         e.preventDefault()
-        axios.post('http://localhost:3000/signUP',{name,email,password})
+        axios.post('http://localhost:5000/signUP',{name,email,password}) // this is the backend server 
         .then(result=> console.log(result))
         .catch(err=> console.log(err))
     }
@@ -62,4 +64,4 @@ function sighUp(){
   </div>  
     </>)
 }
-export default sighUp;
+export default SighUp;

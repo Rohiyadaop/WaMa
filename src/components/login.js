@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../style/login.css';
 import axios from 'axios';
 
-function login(){
+function Login(){
     
     const [email ,setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -10,7 +10,7 @@ function login(){
 
     const handleSubmit= (e)=>{
         e.preventDefault()
-        axios.post('',{email,password})
+        axios.post('http://localhost:5000/login',{email,password})
         .then(result=> console.log(result))
         .catch(err=> console.log(err))
     }
@@ -54,4 +54,4 @@ function login(){
   </div>  
     </>)
 }
-export default login;
+export default Login;
