@@ -13,7 +13,7 @@ function header() {
             <li><a href="buyer">buyer</a></li>
             <li><a href="sheller">sheller</a></li>
             <li><a href="Skilltraning">Skill traning </a></li>
-            <li><a href="about">about</a></li>
+            <li><a href="/about">about</a></li>
             <li><a href="login">Contact</a></li>
         </ul>
         <div class="search-box">

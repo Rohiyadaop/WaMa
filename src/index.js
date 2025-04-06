@@ -6,7 +6,8 @@ import { createBrowserRouter , Route , RouterProvider } from 'react-router-dom';
 
 import App from './App';
 import Login from './components/login';
-import About from './pages/about';
+// import About from './pages/about';
+import SignUp from './components/signUp';
 import Buyer from './pages/buyer';
 import Sheller from './pages/sheller';
 import Skilltraning from './pages/skilltraning'
@@ -21,8 +22,8 @@ const router = createBrowserRouter([
     element : <Login />
   },
   {
-    path : "/about",
-    element : <About />
+    path : "/signUP",
+    element : <SignUp />
   },
   {
     path : "/buyer",

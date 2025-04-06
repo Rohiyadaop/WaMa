@@ -1,8 +1,8 @@
 /* Apply dark background and center content */
-.body {
+.homepagebody {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #000;
+    background-color: #141111;
     color: white;
     text-align: center;
     display: flex;

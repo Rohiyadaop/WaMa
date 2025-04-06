@@ -1,0 +1,91 @@
+.sighUpbody {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.sighUpunsplash.sighUpcom/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sighUpcontainer {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.sighUp1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 350px;
+    color: #fff;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.sighUp37);
+  }
+  
+  .sighUpsighUp-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+  }
+  
+  .sighUpinput-group {
+    margin-bottom: 20px;
+  }
+  
+  .sighUpinput-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .sighUpinput-field {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.sighUp2);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .sighUpinput-field i {
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  .sighUpinput-field input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .sighUpoptions {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .sighUpoptions a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sighUpbtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0f5132;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .sighUpbtn:hover {
+    background-color: #0c3b25;
+  }
+  
+  .sighUpregister-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  

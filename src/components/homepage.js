@@ -6,7 +6,7 @@ import watch from '../assets/watch.webp'
 const HomePage = () => {
     return (
       <>
-      <div  className="body">
+      <div  className="homepagebody">
        <header class="hero">
         <h2 class="product-name">Waste Managemant </h2>
         <h1 class="headline">Here your slogen ......</h1>
