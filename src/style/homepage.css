@@ -149,14 +149,16 @@
 /* Body Styling */
 body {
     background-color: black;
-    color: white;
+    color: rgb(17, 4, 4);
     text-align: center;
     padding: 20px;
+    background: url('https://images.loginunsplash.logincom/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
 }
 
 /* Header Styling */
 .header {
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .header h1 {
