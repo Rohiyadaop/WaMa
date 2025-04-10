@@ -1,9 +1,34 @@
-import React from "react";
+import React , { useState, useEffect } from "react";
 import '../style/homepage.css'
 import video2 from '../assets/video2.mp4'
 import watch from '../assets/watch.webp'
 
 const HomePage = () => {
+    const [showButton, setShowButton] = useState(false);
+
+    // Show the button when the user scrolls down
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    // Scroll to the top of the page
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
+
     return (
       <>
       <div  className="homepagebody">
@@ -130,7 +155,11 @@ const HomePage = () => {
         </div>
     </div>
 
-
+    {showButton && (
+                <button className="go-to-top-button" onClick={scrollToTop}>
+                    ↑ 
+                </button>
+            )}
       </>
     );
 };
