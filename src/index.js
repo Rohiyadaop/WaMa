@@ -11,7 +11,9 @@ import Buyer from './pages/buyer';
 import Sheller from './pages/sheller';
 import Skilltraning from './pages/skilltraning'
 import Contect from './pages/contect';
+import Details from './components/details';
 import LiveClassesPage from './components/videocall';
+import { SocketProvider } from './context/Socket';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
     element : <Buyer />
   },
   {
+    path : "/buyer/details",
+    element : <Details />
+  },
+  {
     path : "/sheller",
     element : <Sheller />
   },
@@ -39,8 +45,24 @@ const router = createBrowserRouter([
     element : <Skilltraning />
   },
   {
-    path : "/Skilltraning/liveclass",
+    path : "/liveclass",
     element : <LiveClassesPage />
+  },
+  {
+    path : "/Skilltraning/buyer",
+    element : <Buyer />
+  },
+  {
+    path : "/Skilltraning/contect",
+    element : <Contect />
+  },
+  {
+    path : "/Skilltraning/sheller",
+    element : <Sheller />
+  },
+  {
+    path : "/Skilltraning/about",
+    element : <About />
   },
   {
     path : "/contect",
@@ -55,13 +77,13 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
+    <SocketProvider>
   <RouterProvider router={router}>
+      <App />
   </RouterProvider>
+    </SocketProvider>
    
  
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
