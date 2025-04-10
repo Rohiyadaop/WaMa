@@ -11,6 +11,7 @@ import Buyer from './pages/buyer';
 import Sheller from './pages/sheller';
 import Skilltraning from './pages/skilltraning'
 import Contect from './pages/contect';
+import LiveClassesPage from './components/videocall';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path : "/Skilltraning",
     element : <Skilltraning />
+  },
+  {
+    path : "/Skilltraning/liveclass",
+    element : <LiveClassesPage />
   },
   {
     path : "/contect",
