@@ -11,6 +11,19 @@
     height: 100vh;
 }
 
+.homepagebody {
+    background-image: url('../assets/homepage2.avif'); /* Use img2 as the background */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Ensure text is visible on the background */
+  }
+
 .hero {
     position: relative;
     width: 100%;
@@ -133,10 +146,10 @@
     font-size: 16px;
     opacity: 0.8;
 }
-.info-box2 video {
+.info-box2 img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures video fills the box */
+    object-fit: cover; /* Ensures img fills the box */
     border-radius: 10px;
 }
 * {
@@ -180,7 +193,7 @@ body {
     padding: 20px;
 }
 
-/* Video Box Styling */
+/* img Box Styling */
 .info-box {
     width: 100%;
     aspect-ratio: 16 / 9; /* Keeps a consistent size */
@@ -194,8 +207,8 @@ body {
     height: 70vmin;
 }
 
-/* Video Styling */
-.info-box video {
+/* img Styling */
+.info-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;

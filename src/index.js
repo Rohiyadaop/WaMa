@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import '../src/style/index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter , Route , RouterProvider } from 'react-router-dom';
 import App from './App';
@@ -13,7 +13,9 @@ import Skilltraning from './pages/skilltraning'
 import Contect from './pages/contect';
 import Details from './components/details';
 import LiveClassesPage from './components/videocall';
-import { SocketProvider } from './context/Socket';
+import { SocketProvider } from './provider/socket';
+import CallingPage from './pages/callingpage';
+
 
 const router = createBrowserRouter([
   {
@@ -71,19 +73,21 @@ const router = createBrowserRouter([
   {
     path :"/about",
     element : <About />
+  },
+  {
+    path :"/room/:roomid",
+    element : <CallingPage />
   }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
+  <React.StrictMode>
     <SocketProvider>
   <RouterProvider router={router}>
       <App />
   </RouterProvider>
     </SocketProvider>
-   
- 
+ </React.StrictMode>
 );
-
 reportWebVitals();

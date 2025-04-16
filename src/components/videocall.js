@@ -1,19 +1,31 @@
 import React from 'react'
 import '../style/videocall.css';
 import writingIcon from '../assets/writing.jpeg';
-import {useSocket} from '../context/Socket';
-import { useState } from 'react';
+import { useState,useEffect } from 'react'; 
+import { useNavigate } from 'react-router-dom'; //importing the useNavigate hook from react-router-dom
+import {useSocket} from '../provider/socket';
 
 const Videocall = () => {
-const {socket} = useSocket();
-//varrible  to store the email and 
+
+  const {socket} = useSocket(); //importing the socket from the provider
+  const navigate = useNavigate(); //using the useNavigate hook to navigate to the room page
+//varrible  to store the email and
+
 const [email, setEmail] = useState('');
 const [roomid , setRoomid] = useState('');
 
-const handleJoinRoom = () => {
-
-  socket.emit('join-room', {emailid: email, roomid});
+const handleRoomjoined  = ({roomid})=>{
+  console.log("joined room", roomid);
 }
+
+const handleJoinRoom = () => {
+ navigate(`/room/${roomid}`); //navigating to the room page
+}
+useEffect(() => {
+  socket.on("joined-room", handleRoomjoined); //listening to the event when the user joins the room
+},[socket])
+
+
 
   return (
    <>
@@ -29,7 +41,6 @@ const handleJoinRoom = () => {
       </ul>
     </nav>
   </header>
-
   <main>
     <section className="text-section">
       <h1>LIVE TRAINING CLASS</h1>
