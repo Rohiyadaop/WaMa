@@ -1,27 +1,28 @@
-/* Apply dark background and center content */
+Apply dark background and center content
 .homepagebody {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #141111;
     color: white;
     text-align: center;
     display: flex;
+    font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.homepagebody {
-    background-image: url('../assets/homepage2.avif'); /* Use img2 as the background */
+  }
+  
+  .homepagebody {
+    background-image: url('../assets/homepage1.webp'); /* Replace with the correct path to homepage1 */
     background-size: cover; /* Ensure the image covers the entire area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    /* background: linear-gradient(to right, #f8f9fa, #e9ecef);  */
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffffff; /* Ensure text is visible on the background */
+    color: #111111; /* Ensure text is visible on the background */
+    z-index: -1;
   }
 
 .hero {
@@ -70,7 +71,7 @@
     width: 100%;
     height: 95px;
     background: linear-gradient(90deg, #0ff, #ff0, #f00);
-    margin-top: 20px;
+    margin-top: 479px;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);  
     border-radius: 45px;
     display: flex;
@@ -105,7 +106,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     padding: 50px;
 }
@@ -115,11 +116,11 @@
     width: 50%;
     height: 340px;
     padding: 20px;
-    background: #111;
+    background: #f0ecec;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 153, 0, 0.5);
     text-align: center;
-    color: white;
+    color: rgb(7, 7, 7);
 }
 
 /* Gradient Text */
@@ -133,7 +134,7 @@
 
 /* Right Side Content */
 .content {
-    color: white;
+    color: rgb(10, 10, 10);
     max-width: 400px;
 }
 
@@ -159,15 +160,13 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body Styling */
 body {
-    background-color: black;
+    background-color: rgb(250, 250, 250);
     color: rgb(17, 4, 4);
     text-align: center;
     padding: 20px;
-    background: url('https://images.loginunsplash.logincom/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
-}
-
+   
+  }
 /* Header Styling */
 .header {
     margin-bottom: 30px;
@@ -197,7 +196,7 @@ body {
 .info-box {
     width: 100%;
     aspect-ratio: 16 / 9; /* Keeps a consistent size */
-    background: #111;
+    background: #f8f5f5;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 153, 0, 0.5);
     display: flex;
@@ -289,3 +288,59 @@ body {
     transform: scale(1.1);
     background-color: #0056b3;
 }
+
+  
+  .background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .floating-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 10s infinite ease-in-out;
+  }
+  
+  .floating-icon.recycle {
+    background-image: url('../assets/recycle-icon.png'); /* Replace with your recycle icon */
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+  }
+  
+  .floating-icon.trash {
+    background-image: url('../assets/trash-icon.png'); /* Replace with your trash icon */
+    top: 50%;
+    left: 70%;
+    animation-delay: 2s;
+  }
+  
+  .floating-icon.bin {
+    background-image: url('../assets/bin-icon.png'); /* Replace with your bin icon */
+    top: 80%;
+    left: 40%;
+    animation-delay: 4s;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-20px) rotate(15deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }

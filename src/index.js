@@ -9,12 +9,9 @@ import About from './pages/about';
 import SignUp from './components/signUp';
 import Buyer from './pages/buyer';
 import Sheller from './pages/sheller';
-import Skilltraning from './pages/skilltraning'
 import Contect from './pages/contect';
 import Details from './components/details';
-import LiveClassesPage from './components/videocall';
-import { SocketProvider } from './provider/socket';
-import CallingPage from './pages/callingpage';
+
 
 
 const router = createBrowserRouter([
@@ -43,51 +40,21 @@ const router = createBrowserRouter([
     element : <Sheller />
   },
   {
-    path : "/Skilltraning",
-    element : <Skilltraning />
-  },
-  {
-    path : "/liveclass",
-    element : <LiveClassesPage />
-  },
-  {
-    path : "/Skilltraning/buyer",
-    element : <Buyer />
-  },
-  {
-    path : "/Skilltraning/contect",
-    element : <Contect />
-  },
-  {
-    path : "/Skilltraning/sheller",
-    element : <Sheller />
-  },
-  {
-    path : "/Skilltraning/about",
-    element : <About />
-  },
-  {
     path : "/contect",
     element : <Contect />
   },
   {
     path :"/about",
     element : <About />
-  },
-  {
-    path :"/room/:roomid",
-    element : <CallingPage />
   }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SocketProvider>
   <RouterProvider router={router}>
       <App />
   </RouterProvider>
-    </SocketProvider>
  </React.StrictMode>
 );
 reportWebVitals();

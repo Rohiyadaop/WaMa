@@ -1,27 +1,26 @@
-import '../style/header.css'
-function header() {
+import '../style/header.css';
 
-    return (<>
-       <body>  
-       <nav class="navbar">
-        <div class="logo">
-            <img src= "" alt="WaMa logo"></img>
-            <span>WaMa</span>
+function Header() {
+  return (
+    <>
+      <nav className="navbar">
+        <div className="logo">
+          <img src="" alt="WaMa logo" className="logo-image" />
+          <span>WaMa</span>
         </div>
-        <ul class="nav-links">
+          <ul className="nav-links">
             <li><a href="/">Home</a></li>
-            <li><a href="buyer">buyer</a></li>
-            <li><a href="sheller">sheller</a></li>
-            <li><a href="Skilltraning">Skill traning </a></li>
-            <li><a href="about">about</a></li>
+            <li><a href="buyer">Buyer</a></li>
+            <li><a href="sheller">Seller</a></li>
+            <li><a href="about">About</a></li>
             <li><a href="contect">Contact</a></li>
-        </ul>
-        <div class="search-box">
-            <input type="text" placeholder="Search about product "></input>
-            <button>🔍</button>
+          </ul>
+        <div>
+            user
         </div>
-    </nav>
-</body>
-    </>)
+      </nav>
+    </>
+  );
 }
-export default header;
+
+export default Header;

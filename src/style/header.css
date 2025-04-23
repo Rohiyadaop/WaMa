@@ -1,75 +1,75 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Navbar Styling */
-.navbar {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #010b16; /* Dark blue IIT Bombay color */
-    padding: 15px 30px;
-}
-
-/* Logo and Title */
-.logo {
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradient background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    color: #ffffff;
+    margin: 10px; /* Add spacing around the navbar */
+  }
+  
+  .logo {
     display: flex;
     align-items: center;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.logo img {
+    gap: 10px;
+  }
+  
+  .logo-image {
+    width: 40px;
     height: 40px;
-    margin-right: 10px;
-}
-
-/* Navigation Links */
-.nav-links {
+    border-radius: 50%; /* Circular logo */
+    background-color: #ffffff; /* Placeholder background */
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.nav-links li a {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
     text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav-links li a:hover {
-    color: #ffcc00; 
-}
-
-/* Search Box */
-.search-box {
-    display: flex;
-    align-items: center;
-}
-
-.search-box input {
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-}
-
-.search-box button {
-    background-color: #00b7ff;
-    /* background: linear-gradient(90deg, #0ff, rgb(238, 238, 132), rgb(235, 145, 145)); */
-    border: none;
-    padding: 5px 10px;
-    margin-left: 5px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.search-box button:hover {
-    background-color: #ffaa00;
-}
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
