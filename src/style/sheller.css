@@ -172,3 +172,65 @@
 .toggle-history-button:hover {
     background-color: #0056b3;
 }
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-caption h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.carousel-caption p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+.carousel-slide {
+  display: none; /* Hide all slides by default */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  display: block; /* Show only the active slide */
+  opacity: 1;
+}
