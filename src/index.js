@@ -11,6 +11,8 @@ import Buyer from './pages/buyer';
 import Sheller from './pages/sheller';
 import Contect from './pages/contect';
 import Details from './components/details';
+import Payment from './pages/payment'
+import Admin from './components/admin';
 
 
 
@@ -46,6 +48,15 @@ const router = createBrowserRouter([
   {
     path :"/about",
     element : <About />
+  }
+  ,
+  {
+    path:"/payment",
+    element: <Payment/>
+  },
+  {
+    path:"/admin",
+    element:<Admin/>
   }
 ])
 

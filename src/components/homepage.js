@@ -89,6 +89,14 @@ const handleAddWaste = (e) => {
 
   return (
     <>
+    <style>
+      {`
+      body {
+  margin: 0;
+  padding: 0;
+}
+      `}
+    </style>
       <div className="homepagebody">
         {/* Background Animation */}
         <div className="background-animation">{generateIcons()}</div>

@@ -1,4 +1,10 @@
 Apply dark background and center content
+.body{
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
 .homepagebody {
     margin: 0;
     color: white;

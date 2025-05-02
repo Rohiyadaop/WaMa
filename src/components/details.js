@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const Details = () => {
+
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     location: '',
     payment: '',
@@ -16,6 +18,7 @@ const Details = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Form submitted successfully! Details: ${JSON.stringify(formData)}`);
+    navigate('/payment');
   };
 
   return (
